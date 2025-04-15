@@ -8,3 +8,4 @@ title: Morning Vibes
 Temani pagi Anda dengan lagu hits Pop, Dancedhut 2024/2025 dan info terkini, bersama Host :
 ![](https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg)
 **DINA MAHARANI**
+Kalian bisa Request, salam ke WhatssApp Studio : [+62 822-9876-5432](https://wa.me/6282298765432?text=Halo%20Kakak%20Penyiar)
