@@ -1,4 +1,4 @@
-![1 ratecard](https://github.com/user-attachments/assets/4a3d7c58-e9e3-4911-9619-ba3747b8ff8c)![1 ratecard](https://github.com/user-attachments/assets/e7bd45cb-7c6d-436f-8e23-7a33c7692661)![1 ratecard](https://github.com/user-attachments/assets/5671f225-ddaf-4b1d-9092-adbda55bab01)---
+---
 layout: default
 title: Tentang Kami
 ---
@@ -72,5 +72,5 @@ Perseroan Terbatas (PT), Perorangan
 
 **Rate Card**
 ![1 ratecard](https://github.com/user-attachments/assets/b4eaf7b2-7097-4b98-9e8c-28c98f5b8c66)
-
+![2 ratecard](https://github.com/user-attachments/assets/7bb629b5-1047-4a00-897a-51609ede3a53)
 ---
