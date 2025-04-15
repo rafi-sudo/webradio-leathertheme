@@ -3,7 +3,7 @@ layout: default
 title: Tentang Kami
 ---
 
-<b>Tentang Radio Cempaka Angkasa 102.1 FM</b>
+<b>Tentang Radio Lorem Ipsum 102.1 FM</b>
 <b>Visi & Misi</b>
 
 **Visi**: Menjadi radio pilihan utama masyarakat.  
@@ -32,8 +32,8 @@ PT. Lorem Ipsum Broadcasting Network
 Radio Lorem Ipsum
 
 **Frekuensi Siaran:**
-FM 99.9 MHz (Wilayah Siaran Lokal)
-Streaming Online: www.loremipsumradio.com
+FM 102.1 MHz (Wilayah Siaran Lokal)
+Streaming Online: www.loremradio.id
 
 **Alamat Kantor Pusat:**
 Jl. Contoh No.99, Kelurahan Ipsum, Kecamatan Dolor Sit, Kota Lorem, Kode Pos 12345
