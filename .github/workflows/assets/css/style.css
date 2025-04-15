@@ -1,0 +1,61 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f5c200, #f39c12); /* Gradasi kuning tua ke oranye */
+    color: #333;
+}
+
+header {
+    background-color: #000; /* Header warna hitam */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(to bottom, #f5c200, #f39c12); /* Gradasi kuning tua ke oranye */
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.live-stream, .program-list, .contact {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #000; /* Footer warna hitam */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
