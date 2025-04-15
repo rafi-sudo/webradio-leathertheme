@@ -3,7 +3,7 @@ layout: default
 title: Tentang Kami
 ---
 
-<p><b>Tentang Radio Cempaka Angkasa 102.1 FM</b><p/>
+<b>Tentang Radio Cempaka Angkasa 102.1 FM</b>
 
 ## Visi & Misi
 Visi: Menjadi radio pilihan utama masyarakat.  
