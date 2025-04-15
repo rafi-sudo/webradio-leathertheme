@@ -4,10 +4,10 @@ title: Tentang Kami
 ---
 
 <b>Tentang Radio Cempaka Angkasa 102.1 FM</b>
-<br/>
 <b>Visi & Misi</b>
-Visi: Menjadi radio pilihan utama masyarakat.  
-Misi: Menyajikan informasi & hiburan berkualitas, inspiratif, dan terpercaya.
+
+**Visi**: Menjadi radio pilihan utama masyarakat.  
+**Misi**: Menyajikan informasi & hiburan berkualitas, inspiratif, dan terpercaya.
 
 ---
 
