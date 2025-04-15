@@ -4,7 +4,6 @@ title: Tentang Kami
 ---
 
 <b>Tentang Radio Lorem Ipsum 102.1 FM</b>
-<b>Visi & Misi</b>
 
 **Visi**: Menjadi radio pilihan utama masyarakat.  
 **Misi**: Menyajikan informasi & hiburan berkualitas, inspiratif, dan terpercaya.
