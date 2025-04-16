@@ -134,16 +134,17 @@
     <h3 class="text-2xl md:text-3xl text-center font-bold text-white-300 mb-8">Berita Terbaru</h3>
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {% for post in site.news limit:3 %}
-<div class="shadow-lg rounded overflow-hidden">
-    <a href="news.html">
-        <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="w-full h-48 object-cover">
-        <div class="p-4 bg-white">
-            <h3 class="text-lg font-semibold">{{ post.title }}</h3>
-            <p class="text-sm text-gray-500 mt-1">{{ post.date | date: "%d %B %Y" }} • {{ post.category | capitalize }}</p>
-        </div>
-    </a>
-</div>
+       {% assign popular_news = site.news | sort: 'date' | reverse %}
+{% for post in popular_news limit:3 %}
+    <div class="shadow-lg rounded overflow-hidden">
+        <a href="{{ post.url | relative_url }}">
+            <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="w-full h-48 object-cover">
+            <div class="p-4 bg-white">
+                <h3 class="text-lg font-semibold">{{ post.title }}</h3>
+                <p class="text-sm text-gray-500 mt-1">{{ post.date | date: "%d %B %Y" }} • {{ post.category | capitalize }}</p>
+            </div>
+        </a>
+    </div>
 {% endfor %}
     </div>
 </section>
