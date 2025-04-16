@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: news
 title: AI Radio
 category: Teknologi
 date: 2025-04-14
