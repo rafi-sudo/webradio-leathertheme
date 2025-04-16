@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Berita
+title: news
 ---
 
 # Berita Terbaru
