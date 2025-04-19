@@ -5,4 +5,4 @@ url: "https://domainkamu.com"
 collections:
   news:
     output: true
-    permalink: news/title:
+    permalink: "post/:title"
