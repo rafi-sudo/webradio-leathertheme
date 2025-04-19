@@ -129,24 +129,25 @@
         </div>
     </div>
 </section>
-	<h1>Artikel Terbaru</h1>
-<div></div>
-  {% for post in site.posts limit:4 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.excerpt }}</p>
-    </li>
-  {% endfor %}
-<div>
-<h2>Artikel Pilihan</h2>
-<ul>
-  {% assign pilihan = site.posts | where: "kategori", "pilihan" %}
-  {% for post in pilihan limit:3 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-<div></div>
+	<!-- NEWS SECTION -->
+<section class="p-6 max-w-7xl mx-auto">
+    <h3 class="text-2xl md:text-3xl text-center font-bold text-yellow-300 mb-8">Berita Terbaru</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {% for post in site.posts limit:3 %}
+        <a href="{{ post.url }}" class="relative rounded-lg overflow-hidden shadow-lg group block">
+            <img src="{{ post.image | default: '/assets/images/default-news.jpg' }}" alt="{{ post.title }}" class="w-full h-48 md:h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+            
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4">
+                <h4 class="text-white font-bold text-lg">{{ post.title }}</h4>
+                <div class="flex justify-between items-center mt-2 text-xs text-yellow-200">
+                    <span>{{ post.date | date: "%d %B %Y" }}</span>
+                    <span>{{ post.category | capitalize }}</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>
             <audio controls class="w-full">
                 <source src="https://stream.roov.id:8062/stream" type="audio/mp3">
                 Browser Anda tidak mendukung pemutar audio.
