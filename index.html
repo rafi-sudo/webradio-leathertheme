@@ -129,15 +129,25 @@
         </div>
     </div>
 </section>
-	 <h1>Article Title</h1>
-  <div id="article-content"></div>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="script.js"></script>
-        <!-- Teks dan Audio Player -->
-        <div class="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
-            <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Streaming Di Sini</h3>
-            <p class="text-white mb-6">Dengarkan Radio Lorem Ipsum 102.1 FM, 24 Jam kapan saja dan di mana saja!</p>
-            
+	<h1>Artikel Terbaru</h1>
+<ul>
+  {% for post in site.posts limit:4 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+<h2>Artikel Pilihan</h2>
+<ul>
+  {% assign pilihan = site.posts | where: "kategori", "pilihan" %}
+  {% for post in pilihan limit:3 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
             <audio controls class="w-full">
                 <source src="https://stream.roov.id:8062/stream" type="audio/mp3">
                 Browser Anda tidak mendukung pemutar audio.
