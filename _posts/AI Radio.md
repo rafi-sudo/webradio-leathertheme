@@ -1,8 +1,8 @@
 ---
-layout: default
-title: "AI Radio"
-category: Teknologi
-date: 2025-04-25
+title: "Judul Berita"
+date: 2025-04-22
+image: /assets/images/foto.jpg
+category: teknologi
 ---
 
 # AI Radio: Masa Depan Penyiaran Digital
