@@ -1,6 +1,6 @@
 ---
-layout: post
-title: AI Radio
+layout: default
+title: "AI Radio"
 category: Teknologi
 date: 2025-04-25
 ---
