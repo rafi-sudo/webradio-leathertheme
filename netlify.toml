@@ -1,0 +1,7 @@
+[build]
+  command = "bundle exec jekyll build"
+  publish = "_site"
+
+# Optional: clear cache setiap deploy
+[build.environment]
+  JEKYLL_ENV = "production"
