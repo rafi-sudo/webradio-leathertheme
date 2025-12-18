@@ -1,8 +1,8 @@
 title: Radio Lorem Ipsum 102.1 FM
-baseurl: "" # kalau root langsung
-url: "https://domainkamu.com"
+baseurl: ""
+url: ""
 
 collections:
   news:
     output: true
-    permalink: "posts/:title"
+    permalink: /posts/{title}/
