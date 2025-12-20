@@ -14,35 +14,30 @@
             background-image: url('http://www.transparenttextures.com/patterns/white-leather.png');
             background-repeat: repeat;
         }
-		/* === AKSEN GRADIENT === */
-.orbLt {
-  background: linear-gradient(135deg, #ffd200, #ff4d6d) !important;
+		/* === WRAPPER === */
+.radio-wrap {
+  max-width: 420px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.orbL {
-  background: #fff !important;
-  border-radius: 10px !important;
-  transition: box-shadow .4s ease;
-}
-
-.orbL:hover {
-  box-shadow: 0 0 20px rgba(255, 210, 0, 0.4);
-}
-
-/* === PLAYER === */
+/* === AUDIO PLAYER === */
 .radio-player {
   background: linear-gradient(135deg, #ffd200, #ff4d6d);
-  padding: 12px;
-  border-radius: 12px;
-  margin-bottom: 12px;
-  box-shadow: 0 0 18px rgba(255, 210, 0, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.12);
 }
 
 .radio-player audio {
   width: 100%;
 }
 
-/* Ikon play / pause & volume putih */
+/* Kontrol audio warna putih */
+audio::-webkit-media-controls-panel {
+  background: transparent;
+}
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-pause-button,
 audio::-webkit-media-controls-mute-button,
@@ -50,11 +45,46 @@ audio::-webkit-media-controls-volume-slider {
   filter: invert(1);
 }
 
-/* Glow saat interaksi */
-audio:focus {
-  outline: none;
-  box-shadow: 0 0 14px rgba(255, 255, 255, 0.8);
+/* === WIDGET ORB === */
+.orbL {
+  background: #fff !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,.1);
 }
+
+/* Header ORB */
+.orbLt {
+  background: linear-gradient(135deg, #ffd200, #ff4d6d) !important;
+}
+
+/* Judul */
+.orbLtn {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+/* Playlist item */
+.orbILi>a {
+  padding: 6px 0;
+}
+
+/* Hover halus */
+.orbILi>a:hover {
+  color: #ff4d6d !important;
+}
+
+/* Aktif */
+.orbILi.a {
+  background: #fff5f7 !important;
+}
+
+/* Glow HALUS saat interaksi */
+.orbL:hover,
+.radio-player:hover {
+  box-shadow: 0 0 14px rgba(255, 210, 0, 0.35);
+}
+
 
     </style>
 </head>
@@ -239,6 +269,7 @@ audio:focus {
         Pedoman Media Siber
     </a>
 </div>
+
 
 
 
