@@ -33,17 +33,74 @@
 .radio-player audio {
   width: 100%;
 }
+/* === FONT BROADCAST === */
+@font-face {
+  font-family: "Broadcast";
+  src: local("Arial Black");
+  font-weight: bold;
+}
 
-/* Kontrol audio warna putih */
-audio::-webkit-media-controls-panel {
-  background: transparent;
+.radio-controller {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffd200, #ff4d6d);
+  box-shadow: 0 8px 22px rgba(0,0,0,.18);
+  max-width: 360px;
 }
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-pause-button,
-audio::-webkit-media-controls-mute-button,
-audio::-webkit-media-controls-volume-slider {
-  filter: invert(1);
+
+/* Gambar tombol */
+.radio-img {
+  width: 80px;
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(0,0,0,.35);
+  cursor: pointer;
+  transition: transform .2s ease;
 }
+
+/* Efek getar halus */
+.playing {
+  animation: vibrate 0.25s infinite;
+}
+
+@keyframes vibrate {
+  0% { transform: translate(0); }
+  25% { transform: translate(1px, -1px); }
+  50% { transform: translate(-1px, 1px); }
+  75% { transform: translate(1px, 1px); }
+  100% { transform: translate(0); }
+}
+
+/* Text */
+.radio-text {
+  line-height: 1.1;
+}
+
+.state {
+  font-family: "Broadcast", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255,255,255,.7);
+}
+
+.status {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.status.on {
+  color: #00ff9c;
+}
+
+.status.off {
+  color: #fff;
+  opacity: .85;
+							 }
+
 .epg-embed {
   max-width: 420px;
   margin: 0 auto;
@@ -134,6 +191,59 @@ audio::-webkit-media-controls-volume-slider {
 
             <!-- ===== AUDIO PLAYER ===== -->
 <div class="radio-wrap">
+	<div class="radio-controller">
+  <img
+    src="assets/image/lev.png"
+    alt="Streaming di Smartphone"
+    id="radioBtn"
+    class="radio-img"
+  >
+
+  <div class="radio-text">
+    <div id="radioState" class="state">PLAY</div>
+    <div id="radioStatus" class="status off">Off Air</div>
+  </div>
+
+  <audio id="radioAudio">
+    <source src="https://stream.pasopatiradio.com/rcabanjar" type="audio/aacp">
+  </audio>
+		<script>
+const btn = document.getElementById("radioBtn");
+const audio = document.getElementById("radioAudio");
+const state = document.getElementById("radioState");
+const status = document.getElementById("radioStatus");
+
+btn.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+});
+
+/* Saat play */
+audio.addEventListener("play", () => {
+  btn.classList.add("playing");
+  state.textContent = "PAUSE";
+  status.textContent = "On Air";
+  status.className = "status on";
+});
+
+/* Saat pause */
+audio.addEventListener("pause", () => {
+  btn.classList.remove("playing");
+  state.textContent = "PLAY";
+  status.textContent = "Off Air";
+  status.className = "status off";
+});
+
+/* Buffering */
+audio.addEventListener("waiting", () => {
+  status.textContent = "Off Air";
+  status.className = "status off";
+});
+		</script>
+	</div>
 <div style="height:300px; overflow:auto;">
  <div class="orbL " id="orb_pl_24cb924d9fc672e">
     <style media="screen">
@@ -156,13 +266,6 @@ audio::-webkit-media-controls-volume-slider {
   .orbILs,.orbILi+li,.orbILsi+li{border-color:#eee !important} /* item border color, schedule border color */
   </style>
     <a class="orbLh" href="https://onlineradiobox.com/id/" title="Listen on Online Radio Box!" target="_blank"><img src="//ecdn.onlineradiobox.com/img/wl.svg" alt="Listen on Online Radio Box!"></a>
-<!-- Audio Player -->
-  <div class="radio-player">
-    <audio controls>
-      <source src="https://stream.pasopatiradio.com/rcabanjar" type="audio/aacp">
-      Browser Anda tidak mendukung pemutar audio.
-    </audio>
-  </div>
     <a class="orbLt" href="https://onlineradiobox.com/id/rcabanjar/" target="_blank">
       <img class="orbLti" src="//cdn.onlineradiobox.com/img/l/4/135684.v5.png" alt="Radio RCA Banjar"><span class="orbLtn">Radio RCA Banjar</span>
     </a>
@@ -238,6 +341,7 @@ audio::-webkit-media-controls-volume-slider {
         Pedoman Media Siber
     </a>
 </div>
+
 
 
 
