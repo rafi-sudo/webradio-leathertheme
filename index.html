@@ -14,6 +14,48 @@
             background-image: url('http://www.transparenttextures.com/patterns/white-leather.png');
             background-repeat: repeat;
         }
+		/* === AKSEN GRADIENT === */
+.orbLt {
+  background: linear-gradient(135deg, #ffd200, #ff4d6d) !important;
+}
+
+.orbL {
+  background: #fff !important;
+  border-radius: 10px !important;
+  transition: box-shadow .4s ease;
+}
+
+.orbL:hover {
+  box-shadow: 0 0 20px rgba(255, 210, 0, 0.4);
+}
+
+/* === PLAYER === */
+.radio-player {
+  background: linear-gradient(135deg, #ffd200, #ff4d6d);
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 0 18px rgba(255, 210, 0, 0.4);
+}
+
+.radio-player audio {
+  width: 100%;
+}
+
+/* Ikon play / pause & volume putih */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+  filter: invert(1);
+}
+
+/* Glow saat interaksi */
+audio:focus {
+  outline: none;
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.8);
+}
+
     </style>
 </head>
 <body class="text-white font-sans">
@@ -46,10 +88,10 @@
         
         <!-- Program 1 -->
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-            <img src="assets\image\morningsong.jfif" alt="Program 1" class="object-cover w-full h-48">
+            <img src="assets\image\infosehat.png" alt="Program 1" class="object-cover w-full h-48">
             <div class="p-4 flex-1 flex flex-col justify-between">
                 <h3 class="font-bold text-yellow-600 text-lg mb-2">Info sehat Setiap Hari Pkl.08-09 WIB</h3>
-                <p class="text-gray-700 text-sm">Temani pagi Anda dengan lagu hits dan info terkini.</p>
+                <p class="text-gray-700 text-sm">Informasi seputar gaya sehat, pengobatan dan tren penyakit kini, diselingi lagu cover lawas.</p>
                 <a href="program1.html" class="mt-4 inline-block text-white font-bold px-4 py-2 rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:opacity-90 text-center">
                     Detail
                 </a>
@@ -58,10 +100,10 @@
 
         <!-- Program 2 -->
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-            <img src="assets\image\nike.jpg" alt="Program 2" class="object-cover w-full h-48">
+            <img src="assets\image\danas.png" alt="Program 2" class="object-cover w-full h-48">
             <div class="p-4 flex-1 flex flex-col justify-between">
                 <h3 class="font-bold text-yellow-600 text-lg mb-2">Danas (Dangdut Lama dan Asli) AsoOy Setiap Hari Pk.09-11 WIB</h3>
-                <p class="text-gray-700 text-sm">Kembali ke kenangan manis lewat deretan lagu klasik terbaik.</p>
+                <p class="text-gray-700 text-sm">Kembali ke kenangan manis lewat deretan lagu Dangdut klasik terbaik.</p>
                 <a href="program2.html" class="mt-4 inline-block text-white font-bold px-4 py-2 rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:opacity-90 text-center">
                     Detail
                 </a>
@@ -70,10 +112,10 @@
 
         <!-- Program 3 -->
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-            <img src="assets\image\topsong.jpg" alt="Program 3" class="object-cover w-full h-48">
+            <img src="assets\image\melodymemory.png" alt="Program 3" class="object-cover w-full h-48">
             <div class="p-4 flex-1 flex flex-col justify-between">
-                <h3 class="font-bold text-yellow-600 text-lg mb-2">Paket Tembang Pinilih Senin - Sabtu Pkl 11.20 - 13.00 WIB</h3>
-                <p class="text-gray-700 text-sm">Chart mingguan lagu-lagu paling populer di Radio Lorem Ipsum.</p>
+                <h3 class="font-bold text-yellow-600 text-lg mb-2">Melody Memory Senin - Sabtu Pkl 19.00 - 21.00 WIB</h3>
+                <p class="text-gray-700 text-sm">Kembali ke kenangan manis lewat deretan lagu Pop Lawas Dewasa terbaik.</p>
                 <a href="program3.html" class="mt-4 inline-block text-white font-bold px-4 py-2 rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:opacity-90 text-center">
                     Detail
                 </a>
@@ -82,10 +124,10 @@
 
         <!-- Program 4 -->
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-            <img src="https://images.pexels.com/photos/10464787/pexels-photo-10464787.jpeg" alt="Program 4" class="object-cover w-full h-48">
+            <img src="assets\image\karaokerca.png" alt="Program 4" class="object-cover w-full h-48">
             <div class="p-4 flex-1 flex flex-col justify-between">
-                <h3 class="font-bold text-yellow-600 text-lg mb-2">Melody Memory Senin - Sabtu 20:00 - 21:00 WIB</h3>
-                <p class="text-gray-700 text-sm">Update informasi lokal, nasional, hingga dunia sepanjang hari.</p>
+                <h3 class="font-bold text-yellow-600 text-lg mb-2">Karaoke AsooOy - Sabtu 20:00 - 22:00 WIB Minggu Pkl 10-11 & 14.17 WIB</h3>
+                <p class="text-gray-700 text-sm">Karaokean Mitraa!! bersama RCA 102.1 FM Karaoke AoooOy! .</p>
                 <a href="program4.html" class="mt-4 inline-block text-white font-bold px-4 py-2 rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:opacity-90 text-center">
                     Detail
                 </a>
@@ -95,10 +137,47 @@
 </section>
             </div>
 </section>
-            <audio controls class="w-full">
-                <source src="https://stream.roov.id:8062/stream" type="audio/mp3">
-                Browser Anda tidak mendukung pemutar audio.
-            </audio>
+            <!-- ===== AUDIO PLAYER ===== -->
+<div class="radio-player">
+  <audio id="radioAudio" controls>
+    <source src="https://stream.pasopatiradio.com/rcabanjar" type="audio/aacp">
+    Browser Anda tidak mendukung pemutar audio.
+  </audio>
+</div>
+
+<!-- ===== WIDGET ASLI ORB (TIDAK DIUBAH) ===== -->
+<div class="orbL" id="orb_pl_24cb924d9fc672e">
+
+  <!-- STYLE ASLI ORB (TETAP ADA) -->
+  <!-- style panjang milik ORB kamu BIARKAN -->
+
+  <!-- LINK ORB -->
+  <a class="orbLh" href="https://onlineradiobox.com/id/" target="_blank">
+    <img src="//ecdn.onlineradiobox.com/img/wl.svg">
+  </a>
+
+  <p>
+    <b>Klik judul lagu untuk melihat versi MV di platform streaming yang lain, enjoy listening.</b>
+  </p>
+
+  <a class="orbLt" href="https://onlineradiobox.com/id/rcabanjar/" target="_blank">
+    <img class="orbLti" src="//cdn.onlineradiobox.com/img/l/4/135684.v5.png">
+    <span class="orbLtn">Radio RCA Banjar</span>
+  </a>
+
+  <script>
+    var orbpl_w = orbpl_w || { lang: "id-id" };
+    orbpl_w.cmd = orbpl_w.cmd || [];
+    orbpl_w.cmd.push(function() {
+      orbpl_w.init("orb_pl_24cb924d9fc672e");
+    });
+
+    var s = document.createElement('script');
+    s.src = "//ecdn.onlineradiobox.com/js/plwidget.min.a1649ec0.js";
+    document.body.appendChild(s);
+  </script>
+</div>
+
         </div>
 
         <!-- Gambar Smartphone -->
@@ -157,5 +236,6 @@
         Pedoman Media Siber
     </a>
 </div>
+
 
 
