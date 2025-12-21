@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Berita
-permalink: /news/
+title: News Update
 ---
 
 {% for post in site.posts %}
