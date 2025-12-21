@@ -94,8 +94,8 @@ Perseroan Terbatas (PT), Perorangan
 - Korlapwil PRSSNI Banjar : Lies R
 
 **Rate Card**
-![1 ratecard](https://github.com/user-attachments/assets/b4eaf7b2-7097-4b98-9e8c-28c98f5b8c66)
-![2 ratecard](https://github.com/user-attachments/assets/7bb629b5-1047-4a00-897a-51609ede3a53)
+![1 ratecard](assets/image/a010777c-4062-4c64-80cf-6118a733b23a(1).jpg)
 ---
+
 
 
