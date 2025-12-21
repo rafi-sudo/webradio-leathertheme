@@ -3,10 +3,22 @@ layout: default
 title: Tentang Kami
 ---
 
-<b>Tentang Radio Lorem Ipsum 102.1 FM</b>
+<b>Tentang 102.1 RCA FM KOTA BANJAR</b>
 
-**Visi**: Menjadi radio pilihan utama masyarakat.  
-**Misi**: Menyajikan informasi & hiburan berkualitas, inspiratif, dan terpercaya.
+**FORMAT MUSIK**
+
+**DEMOGRAFI	BEHAVIORAL**
+UMUR : 70% DEWASA. 30% REMAJA, STATUS SOSIAL : PEKERJA - IBU RUMAH TANGGA , EKONOMI : KELAS C-D-E.	**MEMBELI PRODUK TERTENTU, ALTERNATIF ENTERTAINMENT, PENGHOBI RADIO, PENYUKA BUDAYA (MISC: SANDIWARA RADIO, WAYANG GOLEK/KULIT, LIVE FESTIVAL ADAT ISTIADAT)**,
+**IN CAR LISTENER.**
+ 
+
+DANGDUT : 50 %	ETNIS : 15%
+POP ROCK : 33.5 %	
+BOLLYWOOD : 0.5%
+
+ANAK- ANAK : 0.2%	
+RELIGI : 0.3%
+
 
 ---
 
@@ -27,6 +39,25 @@ RCA FM Kota Banjar AsooOy
 FM 102.1 MHz (Wilayah Siaran Lokal)
 Streaming Online: www.rcafm.asooy.web.id
 
+**Anggota PRSSNI**
+
+425-1 / 1982
+
+**Segmentasi**
+
+Multisegment
+
+**Station Identity**
+
+Radionya Kota Banjar
+
+**Pancaran**
+700Watt
+
+**Jangkauan**
+
+Kab. Kuningan, Kab. Brebes. Kab. Cilacap, Kab. Ciamis, Kota Banjar, dan Lab. Pangandaran
+
 **Alamat Kantor Pusat:**
 Jln. Tentara Pelajar No. 50 Gg Melati Depan DPRD Kota Banjar, Sumanding Wetan, Mekarsari - Kota Banjar. 
 
@@ -41,12 +72,6 @@ rcafmkotabanjar@gmail.com
 Nomor : 02472308-000SU/2020212026
 Diterbitkan oleh: Kementerian Komunikasi dan Informatika Republik Indonesia
 
-**Nomor Induk Berusaha (NIB):**
-0123456789012
-
-**NPWP Perusahaan:**
-01.234.567.8-901.000
-
 **Akte Pendirian Perusahaan:**
 Nomor: 02-5773.HT.01.01.H.84
 Notaris: Musthofa
@@ -56,14 +81,21 @@ Perseroan Terbatas (PT), Perorangan
 
 ---
 
-**Komisaris & Direksi**
+**Komisaris, Direksi, Staff**
 - Komisaris: Kursin Achmad Saputra
-- Direksi: Eris Kristian
+- Direksi: Eris Kristian, S. IP
 - Manajemen Iklan dan Pemasaran : 
----
+  Kusinah, SH. 
+- Manajemen Keuangan dan Administrasi : Kursin
+- Musik Director : Galieh Taka
+- Technical Staff : Anto
+- IT Staff : Ganis
+- Redaksi : PRSSNI
+- Korlapwil PRSSNI Banjar : Lies R
 
 **Rate Card**
 ![1 ratecard](https://github.com/user-attachments/assets/b4eaf7b2-7097-4b98-9e8c-28c98f5b8c66)
 ![2 ratecard](https://github.com/user-attachments/assets/7bb629b5-1047-4a00-897a-51609ede3a53)
 ---
+
 
