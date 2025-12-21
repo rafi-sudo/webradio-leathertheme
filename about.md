@@ -11,40 +11,34 @@ title: Tentang Kami
 ---
 
 **Sejarah**
-Radio Lorem Ipsum berdiri sejak tahun 19XX sebagai salah satu pelopor media penyiaran yang berkomitmen menghadirkan informasi, hiburan, dan inspirasi bagi masyarakat luas. Berawal dari sebuah studio sederhana dengan peralatan terbatas, Radio Lorem Ipsum tumbuh menjadi stasiun radio yang dikenal karena program-program inovatif dan kualitas siaran yang konsisten.
-
-Pada dekade pertama, Radio Lorem Ipsum memfokuskan siarannya pada musik populer, berita lokal, dan program komunitas yang mendekatkan pendengar dengan lingkungan sekitar. Seiring berkembangnya teknologi, stasiun ini mulai mengadopsi sistem penyiaran digital dan memperluas jangkauan siaran melalui streaming online.
-
-Transformasi besar terjadi pada tahun 20XX, ketika Radio Lorem Ipsum resmi menjadi bagian dari jaringan media multinasional, memperluas kerja sama konten, dan menghadirkan berbagai program unggulan yang relevan dengan perkembangan zaman. Dengan semangat "Menyuarakan Inspirasi", Radio Lorem Ipsum terus menjaga dedikasi untuk menghadirkan siaran yang edukatif, menghibur, dan informatif.
-
-Saat ini, Radio Lorem Ipsum tidak hanya hadir di frekuensi FM, tetapi juga aktif di media streaming website ini, memperkuat posisinya sebagai media multiplatform yang adaptif dan berorientasi pada kebutuhan pendengar modern.
-
+Radio RCA merupakan radio yang berada di perbatasan Jawa Barat dan Jawa Tengah, tepatnya di Kota Transit. Dengan berbagai macam karakteristik penduduknya, Radio Cempaka Angkasa — yang akrab disapa RCA — hadir sebagai bagian dari kehidupan masyarakat. Sebagai radio multisegmen, Radio Cempaka Angkasa mengudara di frekuensi 102.1 MHz dan telah lama melekat di hati pendengarnya. RCA dikenal sebagai radio legenda di Kota Banjar. Lebih dari sekadar media penyiaran, keberadaan RCA selama puluhan tahun telah membentuk sebuah ikon kota, yaitu Pertigaan (Segitiga) RCA di Jl. Kapten Jamhur, yang menjadi penanda eksistensi dan kedekatan radio ini dengan masyarakat. 
 ---
 
 **Identitas & Legalitas**
-**Radio Lorem Ipsum**
+**RCA FM 102.1 MHz Kota Banjar**
 
 **Nama Badan Usaha:**
-PT. Lorem Ipsum Broadcasting Network
+PT. RADIO CEMPAKA ANGKASA
 
 **Nama Siaran:**
-Radio Lorem Ipsum
+RCA FM Kota Banjar AsooOy
 
 **Frekuensi Siaran:**
 FM 102.1 MHz (Wilayah Siaran Lokal)
-Streaming Online: www.loremradio.id
+Streaming Online: www.rcafm.asooy.web.id
 
 **Alamat Kantor Pusat:**
-Jl. Contoh No.99, Kelurahan Ipsum, Kecamatan Dolor Sit, Kota Lorem, Kode Pos 12345
+Jln. Tentara Pelajar No. 50 Gg Melati Depan DPRD Kota Banjar, Sumanding Wetan, Mekarsari - Kota Banjar. 
 
 **Nomor Telepon:**
-(021) 1234-5678
++62 823-1988-5778
 
 **Email Resmi:**
-kontak@loremipsumradio.com
+rca_fm_banjar@yahoo.co.id
+rcafmkotabanjar@gmail.com
 
 **Izin Penyelenggaraan Penyiaran:**
-Nomor: 123/ABC/XX/20XX
+Nomor : 02472308-000SU/2020212026
 Diterbitkan oleh: Kementerian Komunikasi dan Informatika Republik Indonesia
 
 **Nomor Induk Berusaha (NIB):**
@@ -54,22 +48,22 @@ Diterbitkan oleh: Kementerian Komunikasi dan Informatika Republik Indonesia
 01.234.567.8-901.000
 
 **Akte Pendirian Perusahaan:**
-No. 99/Notaris/20XX
-Notaris: John Doe, S.H., M.Kn
+Nomor: 02-5773.HT.01.01.H.84
+Notaris: Musthofa
 
 **Status Badan Hukum:**
 Perseroan Terbatas (PT), Perorangan
 
 ---
 
-**CEO, Komisaris & Direksi**
-- CEO: John Doe
-- Komisaris: Jane Smith
-- Direksi: Andi Rahman
-- Manajemen Iklan dan Pemasaran : Sujarwo
+**Komisaris & Direksi**
+- Komisaris: Kursin Achmad Saputra
+- Direksi: Eris Kristian
+- Manajemen Iklan dan Pemasaran : 
 ---
 
 **Rate Card**
 ![1 ratecard](https://github.com/user-attachments/assets/b4eaf7b2-7097-4b98-9e8c-28c98f5b8c66)
 ![2 ratecard](https://github.com/user-attachments/assets/7bb629b5-1047-4a00-897a-51609ede3a53)
 ---
+
