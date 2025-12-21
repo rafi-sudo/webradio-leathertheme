@@ -223,7 +223,7 @@ btn.addEventListener("click", () => {
 /* Saat play */
 audio.addEventListener("play", () => {
   btn.classList.add("playing");
-  state.textContent = "PAUSE";
+  state.textContent = "CLICK TO PAUSE";
   status.textContent = "On Air di 0813-1345-8622";
   status.className = "status on";
 });
@@ -231,7 +231,7 @@ audio.addEventListener("play", () => {
 /* Saat pause */
 audio.addEventListener("pause", () => {
   btn.classList.remove("playing");
-  state.textContent = "PLAY";
+  state.textContent = "CLICK TO PLAY";
   status.textContent = "Off Air";
   status.className = "status off";
 });
@@ -341,6 +341,7 @@ audio.addEventListener("waiting", () => {
         Pedoman Media Siber
     </a>
 </div>
+
 
 
 
