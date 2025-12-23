@@ -1,0 +1,91 @@
+---
+layout: none
+permalink: /404.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 — Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --primary: #e53935;
+      --text: #222;
+      --muted: #666;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue",
+                   Arial, sans-serif;
+      background: #fff;
+      color: var(--text);
+      text-align: center;
+    }
+
+    .wrap {
+      padding: 2rem;
+      max-width: 520px;
+    }
+
+    .code {
+      font-size: 9rem;
+      font-weight: 800;
+      line-height: 1;
+      color: transparent;
+      -webkit-text-stroke: 2px var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    a.home {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      color: #fff;
+      background: var(--primary);
+      transition: opacity .2s ease;
+    }
+
+    a.home:hover {
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="code">404</div>
+
+    <h1>Whoops, looks like that page doesn't exist.</h1>
+
+    <div class="meta">
+      Powered by Fastly CDN, managed web by GitHub.
+    </div>
+
+    <!-- Jekyll index.md otomatis jadi root "/" -->
+    <a class="home" href="{{ '/' | relative_url }}">
+      Back to Home
+    </a>
+  </div>
+</body>
+  </html>
