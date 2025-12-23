@@ -82,16 +82,16 @@ Perseroan Terbatas (PT), Perorangan
 ---
 
 **Komisaris, Direksi, Staff**
-- Komisaris: Kursin Achmad Saputra
-- Direksi: Eris Kristian, S. IP
-- Manajemen Iklan dan Pemasaran : 
-  Kusinah, SH. 
-- Manajemen Keuangan dan Administrasi : Kursin
+- Komisaris: Cholid Ghozali
+- Direksi: Kursin Achmad Saputra
+- Manajemen Bidang Keuangan : Kusinah, S.H
+- Manajemen Bidang Penyiaran : Eris Kristian, S.IP
+- Manajemen Bidang Administrasi / Usaha : Kursin
 - Musik Director : Galieh Taka
 - Technical Staff : Anto
 - IT Staff : Ganis
 - Redaksi : PRSSNI
-- Korlapwil PRSSNI Banjar : Lies R
+- Korlapwil Banjar : Lies R
 
 **Rate Card**
 <iframe
@@ -149,6 +149,7 @@ Perseroan Terbatas (PT), Perorangan
 })();
 </script>
 ---
+
 
 
 
