@@ -17,16 +17,10 @@ collections:
           - { label: "Judul", name: "title", widget: "string" }
           - { label: "Isi Halaman", name: "body", widget: "markdown" }
 
-      - label: "Program 1"
-        name: "program1"
-        file: "program1.md"
+      - label: "Event Off Air"
+        name: "gallery"
+        file: "gallery.md"
         fields:
           - { label: "Judul Program", name: "title", widget: "string" }
           - { label: "Isi Program", name: "body", widget: "markdown" }
 
-      - label: "Kontak"
-        name: "kontak"
-        file: "kontak.md"
-        fields:
-          - { label: "Judul", name: "title", widget: "string" }
-          - { label: "Isi Kontak", name: "body", widget: "markdown" }
