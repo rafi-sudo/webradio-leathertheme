@@ -25,4 +25,45 @@ collections:
         fields:
           - { label: "Judul Program", name: "title", widget: "string" }
           - { label: "Isi Program", name: "body", widget: "markdown" }
+          
+      - label: "Pedoman Media Siber"
+        name: "pedoman-media-siber"
+        file: "pedoman-media-siber.md"
+        fields:
+          - { label: "Judul Program", name: "title", widget: "string" }
+          - { label: "Isi Program", name: "body", widget: "markdown" }
 
+      - label: "Program Unggulan Section 1"
+        name: "program"
+        file: "program.md"
+        fields:
+          - { label: "Judul Program", name: "title", widget: "string" }
+          - { label: "Isi Program", name: "body", widget: "markdown" }
+
+      - label: "Program Unggulan Section 2"
+        name: "program1"
+        file: "program1.md"
+        fields:
+          - { label: "Judul Program", name: "title", widget: "string" }
+          - { label: "Isi Program", name: "body", widget: "markdown" }
+
+      - label: "Program Unggulan Section 3"
+        name: "program2"
+        file: "program2.md"
+        fields:
+          - { label: "Judul Program", name: "title", widget: "string" }
+          - { label: "Isi Program", name: "body", widget: "markdown" }
+
+      - label: "Program Unggulan Section 4"
+        name: "program3"
+        file: "program3.md"
+        fields:
+          - { label: "Judul Program", name: "title", widget: "string" }
+          - { label: "Isi Program", name: "body", widget: "markdown" }
+
+      - label: "Program Unggulan Section 5"
+        name: "program4"
+        file: "program4.md"
+        fields:
+          - { label: "Judul Program", name: "title", widget: "string" }
+          - { label: "Isi Program", name: "body", widget: "markdown" }
