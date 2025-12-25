@@ -2,6 +2,7 @@ backend:
   name: github
   repo: rafi-sudo/webradio-leathertheme
   branch: main
+  client_id: "Ov23limR6Dv4EKq2ZYxP"
 
 media_folder: "assets/image"
 public_folder: "/assets/image"
