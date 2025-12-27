@@ -4,280 +4,282 @@ title: Lagu Nostalgia
 ---
 {% raw %}
 
-<style>
+`<style>`
 
-.radio-controller {
+`.radio-controller {`
 
-  display: flex;
+`  display: flex;`
 
-  align-items: center;
+`  align-items: center;`
 
-  gap: 14px;
+`  gap: 14px;`
 
-  padding: 14px;
+`  padding: 14px;`
 
-  border-radius: 14px;
+`  border-radius: 14px;`
 
-  background: linear-gradient(135deg, #ffd200, #ff4d6d);
+`  background: linear-gradient(135deg, #ffd200, #ff4d6d);`
 
-  box-shadow: 0 8px 22px rgba(0,0,0,.18);
+`  box-shadow: 0 8px 22px rgba(0,0,0,.18);`
 
-  width: 300px;
+`  width: 300px;`
 
-}
+`}`
 
+``
 
+`.speaker {`
 
-.speaker {
+`  width: 64px;`
 
-  width: 64px;
+`  height: 64px;`
 
-  height: 64px;
+`  border-radius: 50%;`
 
-  border-radius: 50%;
+`  overflow: hidden;`
 
-  overflow: hidden;
+`  flex-shrink: 0;`
 
-  flex-shrink: 0;
+`}`
 
-}
+``
 
+`.speaker img {`
 
+`  width: 100%;`
 
-.speaker img {
+`  height: 100%;`
 
-  width: 100%;
+`  object-fit: cover;`
 
-  height: 100%;
+`}`
 
-  object-fit: cover;
+``
 
-}
+`#player-danas.playing .speaker {`
 
+`  animation: vibrate 0.15s infinite;`
 
+`}`
 
-\#player-danas.playing .speaker {
+``
 
-  animation: vibrate 0.15s infinite;
+`@keyframes vibrate {`
 
-}
+`  0% { transform: translate(0); }`
 
+`  25% { transform: translate(1px,-1px); }`
 
+`  50% { transform: translate(-1px,1px); }`
 
-@keyframes vibrate {
+`  75% { transform: translate(1px,1px); }`
 
-  0% { transform: translate(0); }
+`  100% { transform: translate(0); }`
 
-  25% { transform: translate(1px,-1px); }
+`}`
 
-  50% { transform: translate(-1px,1px); }
+``
 
-  75% { transform: translate(1px,1px); }
+`.info { flex: 1; }`
 
-  100% { transform: translate(0); }
+``
 
-}
+`.status {`
 
+`  font-weight: bold;`
 
+`  font-size: 14px;`
 
-.info { flex: 1; }
+`  color: #000;`
 
+`}`
 
+``
 
-.status {
+`.desc {`
 
-  font-weight: bold;
+`  font-size: 12px;`
 
-  font-size: 14px;
+`  color: #222;`
 
-  color: #000;
+`  line-height: 1.3;`
 
-}
+`}`
 
+``
 
+`#playBtn-danas {`
 
-.desc {
+`  padding: 8px 14px;`
 
-  font-size: 12px;
+`  border: none;`
 
-  color: #222;
+`  border-radius: 10px;`
 
-  line-height: 1.3;
+`  font-weight: bold;`
 
-}
+`  background: #000;`
 
+`  color: #fff;`
 
+`  cursor: pointer;`
 
-\#playBtn-danas {
+`}`
 
-  padding: 8px 14px;
+``
 
-  border: none;
+`#playBtn-danas:disabled {`
 
-  border-radius: 10px;
+`  background: #333;`
 
-  font-weight: bold;
+`  cursor: not-allowed;`
 
-  background: #000;
+`}`
 
-  color: #fff;
+`</style>`
 
-  cursor: pointer;
+``
 
-}
+`<div class="radio-controller" id="player-danas">`
 
+`  <div class="speaker">`
 
+`    <img src="lev.png" alt="DANAS">`
 
-\#playBtn-danas:disabled {
+`  </div>`
 
-  background: #333;
+``
 
-  cursor: not-allowed;
+`  <div class="info">`
 
-}
+`    <div class="status" id="status-danas">`
 
-</style>
+`      Checking schedule...`
 
+`    </div>`
 
+`    <div class="desc">`
 
-<div class="radio-controller" id="player-danas">
+`      Danas (Dangdut Lama dan Asli)<br>`
 
-  <div class="speaker">
+`      Setiap Hari • 09:00 – 11:00 WIB`
 
-\    <img src="assetss\image\danas.png" alt="DANAS">
+`    </div>`
 
-  </div>
+`  </div>`
 
+``
 
+`  <button id="playBtn-danas" disabled>PLAY</button>`
 
-  <div class="info">
+``
 
-\    <div class="status" id="status-danas">
+`  <audio id="audio-danas"`
 
-\    Checking schedule...
+`    src="https://stream2.ganisrafi.my.id/backup"`
 
-\    </div>
+`    preload="none"></audio>`
 
-\    <div class="desc">
+`</div>`
 
-\    Danas (Dangdut Lama dan Asli)<br>
+``
 
-\    Setiap Hari • 09:00 – 11:00 WIB
+`<script>`
 
-\    </div>
+`(function () {`
 
-  </div>
+`  const player = document.getElementById("player-danas");`
 
+`  const audio = document.getElementById("audio-danas");`
 
+`  const playBtn = document.getElementById("playBtn-danas");`
 
-  <button id="playBtn-danas" disabled>PLAY</button>
+`  const statusText = document.getElementById("status-danas");`
 
+``
 
+`  function getWIBTime() {`
 
-  <audio id="audio-danas"
+`    const now = new Date();`
 
-\    src="https://stream2.ganisrafi.my.id/backup"
+`    const utc = now.getTime() + (now.getTimezoneOffset() * 60000);`
 
-\    preload="none"></audio>
+`    return new Date(utc + (7 * 60 * 60000));`
 
-</div>
+`  }`
 
+``
 
+`  function checkSchedule() {`
 
-<script>
+`    const wib = getWIBTime();`
 
-(function () {
+`    const hour = wib.getHours();`
 
-  const player = document.getElementById("player-danas");
+``
 
-  const audio = document.getElementById("audio-danas");
+`    // LIVE 09:00 – 10:59 WIB`
 
-  const playBtn = document.getElementById("playBtn-danas");
+`    const isLive = (hour >= 9 && hour < 11);`
 
-  const statusText = document.getElementById("status-danas");
+``
 
+`    if (isLive) {`
 
+`      statusText.textContent = "Playing – DANAS (Dangdut Lama dan Asli)";`
 
-  function getWIBTime() {
+`      playBtn.disabled = false;`
 
-\    const now = new Date();
+`    } else {`
 
-\    const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+`      statusText.textContent = "Not Playing – outside of schedule";`
 
-\    return new Date(utc + (7 \* 60 \* 60000));
+`      playBtn.disabled = true;`
 
-  }
+`      audio.pause();`
 
+`      player.classList.remove("playing");`
 
+`      playBtn.textContent = "PLAY";`
 
-  function checkSchedule() {
+`    }`
 
-\    const wib = getWIBTime();
+`  }`
 
-\    const hour = wib.getHours();
+``
 
+`  playBtn.addEventListener("click", function () {`
 
+`    if (audio.paused) {`
 
-\    // LIVE 09:00 – 10:59 WIB
+`      audio.play();`
 
-\    const isLive = (hour >= 9 && hour < 11);
+`      player.classList.add("playing");`
 
+`      playBtn.textContent = "STOP";`
 
+`    } else {`
 
-\    if (isLive) {
+`      audio.pause();`
 
-\    statusText.textContent = "Playing – DANAS (Dangdut Lama dan Asli)";
+`      player.classList.remove("playing");`
 
-\    playBtn.disabled = false;
+`      playBtn.textContent = "PLAY";`
 
-\    } else {
+`    }`
 
-\    statusText.textContent = "Not Playing – outside of schedule";
+`  });`
 
-\    playBtn.disabled = true;
+``
 
-\    audio.pause();
+`  checkSchedule();`
 
-\    player.classList.remove("playing");
+`  setInterval(checkSchedule, 30000);`
 
-\    playBtn.textContent = "PLAY";
+`})();`
 
-\    }
+`</script>`
 
-  }
-
-
-
-  playBtn.addEventListener("click", function () {
-
-\    if (audio.paused) {
-
-\    audio.play();
-
-\    player.classList.add("playing");
-
-\    playBtn.textContent = "STOP";
-
-\    } else {
-
-\    audio.pause();
-
-\    player.classList.remove("playing");
-
-\    playBtn.textContent = "PLAY";
-
-\    }
-
-  });
-
-
-
-  checkSchedule();
-
-  setInterval(checkSchedule, 30000);
-
-})();
-
-</script>
+``
 
 {% endraw %}
