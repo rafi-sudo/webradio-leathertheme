@@ -144,7 +144,7 @@ title: Lagu Nostalgia
 
 `  <div class="speaker">`
 
-`    <img src="/assets/image/danas.png" alt="DANAS">`
+`    <img src="assets\image\danas.png" alt="DANAS">`
 
 `  </div>`
 
