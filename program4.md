@@ -158,4 +158,4 @@ title: Lorem Ipsum News
   setInterval(checkSchedule, 30000);
 })();
 </script>
-{$ endraw %}
+{% endraw %}
