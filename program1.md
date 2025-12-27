@@ -74,7 +74,7 @@ title: Morning Vibes
 
 <div class="radio-controller" id="player-info-sehat">
   <div class="speaker">
-    <img src="lev.png" alt="Info Sehat">
+    <img src="assets\image\infosehat.png" alt="Info Sehat">
   </div>
 
   <div class="info">
