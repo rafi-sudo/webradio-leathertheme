@@ -144,7 +144,7 @@ title: Lagu Nostalgia
 
 `  <div class="speaker">`
 
-`    <img src="assets\image\danas.png" alt="DANAS">`
+`    <img src="lev.png" alt="DANAS">`
 
 `  </div>`
 
@@ -280,4 +280,4 @@ title: Lagu Nostalgia
 
 `</script>`
 
-{% endraw %}
+`{% endraw %}`
