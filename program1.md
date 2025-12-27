@@ -2,7 +2,8 @@
 layout: default
 title: Morning Vibes
 ---
-`<style>
+{% raw %}
+<style>
 .radio-controller {
   display: flex;
   align-items: center;
@@ -91,9 +92,10 @@ title: Morning Vibes
     src="https://stream2.ganisrafi.my.id/backup"
     preload="none"></audio>
 </div>
+  ...
 
 <script>
-(function () {
+  (function () {
   const player = document.getElementById("player-info-sehat");
   const audio = document.getElementById("audio-info-sehat");
   const playBtn = document.getElementById("playBtn-info-sehat");
@@ -137,8 +139,5 @@ title: Morning Vibes
   checkSchedule();
   setInterval(checkSchedule, 30000);
 })();
-</script>`
-
-- - -
-
- [](https://wa.me/6282298765432?text=Halo%20Kakak%20Penyiar)
+</script>
+{% endraw %}
