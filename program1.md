@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Morning Vibes
+title: Wayang Golek
 ---
 {% raw %}
 <style>
