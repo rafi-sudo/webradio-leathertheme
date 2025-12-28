@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lagu Nostalgia
+title: Danas Dangdut Lawas dan Asli
 ---
 {% raw %}
 <style>
