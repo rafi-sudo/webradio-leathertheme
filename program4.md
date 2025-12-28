@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lorem Ipsum News
+title: Karaoke Asoooy
 ---
 {% raw %}
 <style>
