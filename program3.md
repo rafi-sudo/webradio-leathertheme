@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Top 10 Songs
+title: Melody Memory
 ---
 {% raw %}
 <style>
