@@ -29,7 +29,7 @@ title: Morning Vibes
   object-fit: cover;
 }
 
-#player-info-sehat.playing .speaker {
+#player-wayang.playing .speaker {
   animation: vibrate 0.15s infinite;
 }
 
@@ -41,9 +41,7 @@ title: Morning Vibes
   100% { transform: translate(0); }
 }
 
-.info {
-  flex: 1;
-}
+.info { flex: 1; }
 
 .status {
   font-weight: bold;
@@ -51,12 +49,13 @@ title: Morning Vibes
   color: #000;
 }
 
-.time {
+.desc {
   font-size: 12px;
   color: #222;
+  line-height: 1.3;
 }
 
-#playBtn-info-sehat {
+#playBtn-wayang {
   padding: 8px 14px;
   border: none;
   border-radius: 10px;
@@ -66,40 +65,41 @@ title: Morning Vibes
   cursor: pointer;
 }
 
-#playBtn-info-sehat:disabled {
+#playBtn-wayang:disabled {
   background: #333;
   cursor: not-allowed;
 }
 </style>
 
-<div class="radio-controller" id="player-info-sehat">
+<div class="radio-controller" id="player-wayang">
   <div class="speaker">
-    <img src="assets\image\infosehat.png" alt="Info Sehat">
+    <img src="assets\image\wayanggolek.jpg" alt="Wayang Golek">
   </div>
 
   <div class="info">
-    <div class="status" id="status-info-sehat">
+    <div class="status" id="status-wayang">
       Checking schedule...
     </div>
-    <div class="time">
-      Info Sehat • 08:00 – 09:00 WIB
+    <div class="desc">
+      Wayang Golek<br>
+      Midangkeun Wayang Golek salami 3 jam dina wengi Salasa sareng jumat<br>
+      Selasa & Jumat • 21:00 – 00:00 WIB
     </div>
   </div>
 
-  <button id="playBtn-info-sehat" disabled>PLAY</button>
+  <button id="playBtn-wayang" disabled>PLAY</button>
 
-  <audio id="audio-info-sehat"
+  <audio id="audio-wayang"
     src="https://stream2.ganisrafi.my.id/backup"
     preload="none"></audio>
 </div>
-  ...
 
 <script>
-  (function () {
-  const player = document.getElementById("player-info-sehat");
-  const audio = document.getElementById("audio-info-sehat");
-  const playBtn = document.getElementById("playBtn-info-sehat");
-  const statusText = document.getElementById("status-info-sehat");
+(function () {
+  const player = document.getElementById("player-wayang");
+  const audio = document.getElementById("audio-wayang");
+  const playBtn = document.getElementById("playBtn-wayang");
+  const statusText = document.getElementById("status-wayang");
 
   function getWIBTime() {
     const now = new Date();
@@ -110,10 +110,22 @@ title: Morning Vibes
   function checkSchedule() {
     const wib = getWIBTime();
     const hour = wib.getHours();
+    const day = wib.getDay(); // 0=Minggu, 1=Senin, 2=Selasa, ..., 5=Jumat, 6=Sabtu
 
-    // LIVE hanya 08:00–08:59 WIB
-    if (hour === 8) {
-      statusText.textContent = "Playing – Program Info Sehat";
+    let isLive = false;
+
+    // Selasa 21–24
+    if (day === 2 && hour >= 21) {
+      isLive = true;
+    }
+
+    // Jumat 21–24
+    if (day === 5 && hour >= 21) {
+      isLive = true;
+    }
+
+    if (isLive) {
+      statusText.textContent = "Playing – Wayang Golek";
       playBtn.disabled = false;
     } else {
       statusText.textContent = "Not Playing – outside of schedule";
@@ -140,4 +152,5 @@ title: Morning Vibes
   setInterval(checkSchedule, 30000);
 })();
 </script>
+
 {% endraw %}
