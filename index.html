@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 	<link rel="icon" type="image/png" href="">
     <title>102.1 RCA FM AsooOy</title>
     <script src="https://cdn.tailwindcss.com"></script>
+	<!-- Include Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <style>
         body {
             background-color: #cc8800;
@@ -133,58 +136,78 @@
         </div>
     </header>
 
-   <!-- PROGRAM SLIDER SECTION -->
+   <!-- Include Swiper CSS -->
+
+<!-- PROGRAM SLIDER SECTION -->
 <section class="mt-4 max-w-7xl mx-auto px-4">
-    <h2 class="text-2xl md:text-3xl text-center font-bold text-white-300 mb-6">Program Unggulan Kami</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <!-- Program 1 -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-            <img src="assets\image\infosehat.png" alt="Program 1" class="object-cover w-full h-48">
-            <div class="p-4 flex-1 flex flex-col justify-between">
-                <h3 class="font-bold text-yellow-600 text-lg mb-2">Info sehat Setiap Hari Pkl.08-09 WIB</h3>
-                <p class="text-gray-700 text-sm">Informasi seputar gaya sehat, pengobatan dan tren penyakit kini, diselingi lagu cover lawas.</p>
-                <a href="program1.html" class="mt-4 inline-block text-white font-bold px-4 py-2 rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:opacity-90 text-center">
-                    Detail
-                </a>
+    <h2 class="text-2xl md:text-3xl text-center font-bold text-white mb-6">Program Unggulan Kami</h2>
+
+    <!-- Carousel -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="assets/image/infosehat.png" alt="Program 1" class="object-cover w-full h-48">
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="font-bold text-yellow-600 text-lg mb-2">Info sehat Setiap Hari Pkl.08-09 WIB</h3>
+                        <p class="text-gray-700 text-sm">Informasi seputar gaya sehat, pengobatan dan tren penyakit kini, diselingi lagu cover lawas.</p>
+                        <a href="program1.html" class="mt-4 inline-block text-white font-bold px-4 py-2 rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:opacity-90 text-center">
+                            Detail
+                        </a>
+                    </div>
+                </div>
             </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="assets/image/danas.png" alt="Program 2" class="object-cover w-full h-48">
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="font-bold text-yellow-600 text-lg mb-2">Danas (Dangdut Lama dan Asli) AsoOy Setiap Hari Pk.09-11 WIB</h3>
+                        <p class="text-gray-700 text-sm">Kembali ke kenangan manis lewat deretan lagu Dangdut klasik terbaik.</p>
+                        <a href="program2.html" class="mt-4 inline-block text-white font-bold px-4 py-2 rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:opacity-90 text-center">
+                            Detail
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="assets/image/melodymemory.png" alt="Program 3" class="object-cover w-full h-48">
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="font-bold text-yellow-600 text-lg mb-2">Melody Memory Senin - Sabtu Pkl 19.00 - 21.00 WIB</h3>
+                        <p class="text-gray-700 text-sm">Kembali ke kenangan manis lewat deretan lagu Pop Lawas Dewasa terbaik.</p>
+                        <a href="program3.html" class="mt-4 inline-block text-white font-bold px-4 py-2 rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:opacity-90 text-center">
+                            Detail
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="assets/image/karaokerca.png" alt="Program 4" class="object-cover w-full h-48">
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <h3 class="font-bold text-yellow-600 text-lg mb-2">Karaoke AsooOy - Sabtu 20:00 - 22:00 WIB Minggu Pkl 10-11 & 14.17 WIB</h3>
+                        <p class="text-gray-700 text-sm">Karaokean Mitraa!! bersama RCA 102.1 FM Karaoke AoooOy! .</p>
+                        <a href="program4.html" class="mt-4 inline-block text-white font-bold px-4 py-2 rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:opacity-90 text-center">
+                            Detail
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <!-- Program 2 -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-            <img src="assets\image\danas.png" alt="Program 2" class="object-cover w-full h-48">
-            <div class="p-4 flex-1 flex flex-col justify-between">
-                <h3 class="font-bold text-yellow-600 text-lg mb-2">Danas (Dangdut Lama dan Asli) AsoOy Setiap Hari Pk.09-11 WIB</h3>
-                <p class="text-gray-700 text-sm">Kembali ke kenangan manis lewat deretan lagu Dangdut klasik terbaik.</p>
-                <a href="program2.html" class="mt-4 inline-block text-white font-bold px-4 py-2 rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:opacity-90 text-center">
-                    Detail
-                </a>
-            </div>
-        </div>
-
-        <!-- Program 3 -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-            <img src="assets\image\melodymemory.png" alt="Program 3" class="object-cover w-full h-48">
-            <div class="p-4 flex-1 flex flex-col justify-between">
-                <h3 class="font-bold text-yellow-600 text-lg mb-2">Melody Memory Senin - Sabtu Pkl 19.00 - 21.00 WIB</h3>
-                <p class="text-gray-700 text-sm">Kembali ke kenangan manis lewat deretan lagu Pop Lawas Dewasa terbaik.</p>
-                <a href="program3.html" class="mt-4 inline-block text-white font-bold px-4 py-2 rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:opacity-90 text-center">
-                    Detail
-                </a>
-            </div>
-        </div>
-
-        <!-- Program 4 -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-            <img src="assets\image\karaokerca.png" alt="Program 4" class="object-cover w-full h-48">
-            <div class="p-4 flex-1 flex flex-col justify-between">
-                <h3 class="font-bold text-yellow-600 text-lg mb-2">Karaoke AsooOy - Sabtu 20:00 - 22:00 WIB Minggu Pkl 10-11 & 14.17 WIB</h3>
-                <p class="text-gray-700 text-sm">Karaokean Mitraa!! bersama RCA 102.1 FM Karaoke AoooOy! .</p>
-                <a href="program4.html" class="mt-4 inline-block text-white font-bold px-4 py-2 rounded-full bg-gradient-to-r from-red-500 to-yellow-400 hover:opacity-90 text-center">
-                    Detail
-                </a>
-            </div>
-        </div>
+        <!-- Pagination & Navigation -->
+        <div class="swiper-pagination mt-4"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 </section>
 
@@ -333,6 +356,25 @@ audio.addEventListener("waiting", () => {
             </div>
         </div>
 		<script>
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 4 },
+        },
+    });
 (function(){
   if(window.ChatWidget_wa) return;
   
@@ -389,6 +431,7 @@ audio.addEventListener("waiting", () => {
         Pedoman Media Siber
     </a>
 </div>
+
 
 
 
