@@ -91,7 +91,7 @@ title: Karaoke Asoooy
   <button id="playBtn-karaoke" disabled>PLAY</button>
 
   <audio id="audio-karaoke"
-    src="https://stream2.ganisrafi.my.id/backup"
+    src="https://stream01.ganisrafi.my.id/main"
     preload="none"></audio>
 </div>
 
