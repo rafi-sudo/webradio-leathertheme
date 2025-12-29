@@ -89,7 +89,7 @@ title: Danas Dangdut Lawas dan Asli
   <button id="playBtn-danas" disabled>PLAY</button>
 
   <audio id="audio-danas"
-    src="https://stream2.ganisrafi.my.id/backup"
+    src="https://stream01.ganisrafi.my.id/main"
     preload="none"></audio>
 </div>
 
