@@ -90,7 +90,7 @@ title: Melody Memory
   <button id="playBtn-melody" disabled>PLAY</button>
 
   <audio id="audio-melody"
-    src="https://stream01.ganisrafi.my.id/main"
+    src="https://stream01.ganisrafi.my.id/backup"
     preload="none"></audio>
 </div>
 
