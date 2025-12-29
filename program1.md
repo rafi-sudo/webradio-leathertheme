@@ -90,7 +90,7 @@ title: Wayang Golek
   <button id="playBtn-wayang" disabled>PLAY</button>
 
   <audio id="audio-wayang"
-    src="https://stream2.ganisrafi.my.id/backup"
+    src="https://stream01.ganisrafi.my.id/main"
     preload="none"></audio>
 </div>
 
