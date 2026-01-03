@@ -1,6 +1,7 @@
 title: Radio Cempaka Angkasa 102.1 FM
+description: "102.1 RCA FM AsooOy - Radio lokal berpuluh puluh tahun dengan acara variatifnya dan sudah terkenal dengan segitiga RCA nya"
 baseurl: ""
-url: ""
+url: "https://rcafm.asooy.web.id"
 
 collections:
   news:
