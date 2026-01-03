@@ -3,10 +3,6 @@ description: "102.1 RCA FM AsooOy - Radio lokal berpuluh puluh tahun dengan acar
 baseurl: ""
 url: "https://rcafm.asooy.web.id"
 
-author:
-  name: "ganis"
-  email: "rcafmkotabanjar@gmail.com"
-
 favicon: "/assets/image/favicon-32x32.png"
 
 collections:
