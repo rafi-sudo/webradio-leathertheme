@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ page.title }} | RCA 102.1 FM AsooOy</title>
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+	<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}radio, stream, community, podcast{% endif %}" />
+    <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}" />
+    <meta name="language" content="{{ site.locale }}" />
 	<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 	<link rel="icon" type="image/png" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
