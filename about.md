@@ -82,6 +82,7 @@ Perseroan Terbatas (PT), Perorangan
 ---
 
 **Komisaris, Direksi, Staff**
+{% raw %}
 <div class="team-widget">
   <h2>Struktur Organisasi PT. Radio Cempaka Angkasa</h2>
   <table>
@@ -159,7 +160,7 @@ Perseroan Terbatas (PT), Perorangan
   background-color: #f9f9f9;
 }
 </style>
-
+{% endraw %}
 
 **Rate Card**
 <iframe
