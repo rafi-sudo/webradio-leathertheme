@@ -94,6 +94,34 @@ title: Karaoke Asoooy
     src="https://stream01.ganisrafi.my.id/rcabackup"
     preload="none"></audio>
 </div>
+<!-- File: karaoke-widget-highlight.html -->
+<div id="karaoke-widget" class="p-4 border rounded bg-gray-50 max-w-xl mx-auto">
+  <h2 class="text-2xl font-bold mb-3 text-center">🎤 Karaoke AsoOy!</h2>
+
+  <!-- Thumbnail / YouTube iframe muted -->
+  <div class="mb-4 text-center">
+    <iframe width="360" height="203"
+      src="https://www.youtube.com/embed/VIDEO_ID?rel=0&autoplay=0&mute=1"
+      title="Karaoke Video" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Lirik -->
+  <div id="lyrics" class="mt-2 p-3 border rounded bg-white min-h-[120px]">
+    <div data-time="0">[Intro] Lorem ipsum dolor sit amet...</div>
+    <div data-time="5">[Verse 1] Consectetur adipiscing elit...</div>
+    <div data-time="10">[Chorus] Karaoke time! Sing along...</div>
+    <div data-time="15">[Verse 2] Sed do eiusmod tempor...</div>
+    <div data-time="20">[Chorus] Karaoke time again!</div>
+  </div>
+
+  <!-- Link untuk penyiar -->
+  <div class="mt-3 text-center text-blue-600 underline">
+    <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">Link YouTube (Penyiar)</a>
+  </div>
+</div>
 
 <script>
 (function () {
@@ -158,35 +186,6 @@ title: Karaoke Asoooy
   setInterval(checkSchedule, 30000);
 })();
 </script>
-<!-- File: karaoke-widget-highlight.html -->
-<div id="karaoke-widget" class="p-4 border rounded bg-gray-50 max-w-xl mx-auto">
-  <h2 class="text-2xl font-bold mb-3 text-center">🎤 Karaoke AsoOy!</h2>
-
-  <!-- Thumbnail / YouTube iframe muted -->
-  <div class="mb-4 text-center">
-    <iframe width="360" height="203"
-      src="https://www.youtube.com/embed/VIDEO_ID?rel=0&autoplay=0&mute=1"
-      title="Karaoke Video" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <!-- Lirik -->
-  <div id="lyrics" class="mt-2 p-3 border rounded bg-white min-h-[120px]">
-    <div data-time="0">[Intro] Lorem ipsum dolor sit amet...</div>
-    <div data-time="5">[Verse 1] Consectetur adipiscing elit...</div>
-    <div data-time="10">[Chorus] Karaoke time! Sing along...</div>
-    <div data-time="15">[Verse 2] Sed do eiusmod tempor...</div>
-    <div data-time="20">[Chorus] Karaoke time again!</div>
-  </div>
-
-  <!-- Link untuk penyiar -->
-  <div class="mt-3 text-center text-blue-600 underline">
-    <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">Link YouTube (Penyiar)</a>
-  </div>
-</div>
-
 <script>
 const lyricsDiv = document.getElementById('lyrics');
 const lines = Array.from(lyricsDiv.children);
