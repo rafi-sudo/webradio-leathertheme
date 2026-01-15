@@ -82,16 +82,84 @@ Perseroan Terbatas (PT), Perorangan
 ---
 
 **Komisaris, Direksi, Staff**
-- Komisaris: Cholid Ghozali
-- Direksi: Kursin Achmad Saputra
-- Manajemen Bidang Keuangan : Kusinah, S.H
-- Manajemen Bidang Penyiaran : Eris Kristian, S.IP
-- Manajemen Bidang Administrasi / Usaha : Kursin
-- Musik Director : Galieh Taka
-- Technical Staff : Anto
-- IT Staff : Ganis
-- Redaksi : PRSSNI
-- Korlapwil Banjar : Lies R
+<div class="team-widget">
+  <h2>Struktur Organisasi PT. Radio Cempaka Angkasa</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Jabatan / Divisi</th>
+        <th>Nama</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Komisaris</td>
+        <td>Cholid Ghozali</td>
+      </tr>
+      <tr>
+        <td>Direksi</td>
+        <td>Kursin Achmad Saputra</td>
+      </tr>
+      <tr>
+        <td>Manajemen Bidang Keuangan</td>
+        <td>Kusinah, S.H</td>
+      </tr>
+      <tr>
+        <td>Manajemen Bidang Penyiaran</td>
+        <td>Eris Kristian, S.IP</td>
+      </tr>
+      <tr>
+        <td>Manajemen Bidang Administrasi / Usaha</td>
+        <td>Kursin</td>
+      </tr>
+      <tr>
+        <td>Musik Director</td>
+        <td>Galieh Taka</td>
+      </tr>
+      <tr>
+        <td>Technical Staff</td>
+        <td>Anto</td>
+      </tr>
+      <tr>
+        <td>IT Staff</td>
+        <td>Ganis</td>
+      </tr>
+      <tr>
+        <td>Redaksi</td>
+        <td>PRSSNI</td>
+      </tr>
+      <tr>
+        <td>Korlapwil Banjar</td>
+        <td>Lies R</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<style>
+.team-widget {
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+.team-widget table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+.team-widget th, .team-widget td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.team-widget th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+.team-widget tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+</style>
+
 
 **Rate Card**
 <iframe
