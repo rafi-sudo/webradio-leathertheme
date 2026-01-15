@@ -160,10 +160,10 @@ Perseroan Terbatas (PT), Perorangan
   background-color: #f9f9f9;
 }
 </style>
-{% endraw %}
+
 
 **Rate Card**
-{% raw %}
+
 <img src="https://rcafm.asooy.web.id/assets/image/a010777c-4062-4c64-80cf-6118a733b23a%20(1).jpg" 
      alt="Foto Team" 
      style="max-width:100%; height:auto; border-radius:8px;">
