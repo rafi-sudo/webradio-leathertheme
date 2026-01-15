@@ -213,5 +213,3 @@ setInterval(() => {
 }, interval);
 </script>
 {% endraw %}
-
-{% include karaoke-widget-highlight.html %}
