@@ -159,3 +159,4 @@ title: Karaoke Asoooy
 })();
 </script>
 {% endraw %}
+{% include karaoke-widget-highlight.html %}
