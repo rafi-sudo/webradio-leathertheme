@@ -170,15 +170,15 @@ title: Karaoke Asoooy
   box-shadow:0 4px 12px rgba(0,0,0,0.15);
   font-family:sans-serif;
 ">
-  <h3 style="text-align:center;color:#333;margin-bottom:1rem;">🎤 Karaoke YouTube</h3>
+  <h3 style="text-align:center;color:#333;margin-bottom:1rem;">🎤 Bantu penyiar temukan video karaoke-nya di Youtube. </h3>
   <form id="karaokeForm" style="display:flex;flex-direction:column;gap:0.75rem;">
-    <input type="text" id="youtubeUrl" placeholder="Tempel URL YouTube Karaoke" required
+    <input type="text" id="youtubeUrl" placeholder="Dengan tempel URL YouTube Karaoke" required
            style="padding:0.5rem;border-radius:0.5rem;border:1px solid #ccc;font-size:0.95rem;">
     
     <div id="captchaBox" style="padding:0.5rem;background:#fff;border-radius:0.5rem;text-align:center;color:#666;">
-      Isi captcha di sini
+      Isi captcha di sini (beta)
     </div>
-    <input type="number" id="captchaAnswer" placeholder="Jawaban captcha" required
+    <input type="number" id="captchaAnswer" placeholder="isi angka bebas." required
            style="padding:0.5rem;border-radius:0.5rem;border:1px solid #ccc;font-size:0.95rem;">
     <button type="submit" style="
       padding:0.6rem;
@@ -192,11 +192,11 @@ title: Karaoke Asoooy
     ">
       Kirim
     </button>
+<p>Sulit kirim link? coba refresh kembali browser.
   </form>
 
   <div id="status" style="margin-top:1rem;text-align:center;font-weight:bold;color:#333;"></div>
 </div>
-
 <!-- Script fetch original tetap sama -->
 <script>
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby2bjG6wnmxnndEgqWdhnh_sWKWQq4qA8JIaBNQ0u7orGP9XiI_kDoWo_6nV_wiA__XbA/exec";
@@ -214,7 +214,7 @@ document.getElementById("karaokeForm").addEventListener("submit", function(e) {
   fetch(fullUrl, { mode: "no-cors" })
     .then(() => {
       document.getElementById("status").innerText =
-        "✅ Request karaoke terkirim!";
+        "✅ Request karaoke terkirim!, saran : dengarkan melalui FM konvensional!";
     })
     .catch(() => {
       document.getElementById("status").innerText =
