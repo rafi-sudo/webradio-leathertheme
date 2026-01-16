@@ -1,0 +1,71 @@
+<!-- _includes/karaoke-widget.html -->
+<div class="karaoke-widget" style="
+  max-width:400px;
+  margin:1rem auto;
+  padding:1.5rem;
+  border-radius:1rem;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  background:linear-gradient(135deg,#ffecd2,#fcb69f);
+  font-family:sans-serif;
+">
+  <h3 style="text-align:center;color:#333;margin-bottom:1rem;">🎤 Karaoke YouTube</h3>
+  <form id="karaokeForm" style="display:flex;flex-direction:column;gap:0.75rem;">
+    <input type="text" id="youtubeUrl" placeholder="Tempel URL YouTube Karaoke" required
+           style="padding:0.5rem;border-radius:0.5rem;border:1px solid #ccc;font-size:0.95rem;">
+    
+    <div id="captchaBox" style="padding:0.5rem;background:#fff;border-radius:0.5rem;text-align:center;color:#666;">
+      Isi captcha di sini
+    </div>
+    <input type="number" id="captchaAnswer" placeholder="Jawaban captcha" required
+           style="padding:0.5rem;border-radius:0.5rem;border:1px solid #ccc;font-size:0.95rem;">
+
+    <button type="submit" style="
+      padding:0.6rem;
+      background:#ff6f61;
+      color:#fff;
+      font-weight:bold;
+      border:none;
+      border-radius:0.5rem;
+      cursor:pointer;
+      transition:0.2s;
+    ">
+      Kirim
+    </button>
+  </form>
+
+  <div id="status" style="margin-top:1rem;text-align:center;font-weight:bold;color:#333;"></div>
+</div>
+
+<!-- Script fetch original tetap sama -->
+<script>
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby2bjG6wnmxnndEgqWdhnh_sWKWQq4qA8JIaBNQ0u7orGP9XiI_kDoWo_6nV_wiA__XbA/exec";
+
+document.getElementById("karaokeForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const url = document.getElementById("youtubeUrl").value.trim();
+
+  const fullUrl =
+    SCRIPT_URL +
+    "?youtube_url=" + encodeURIComponent(url) +
+    "&ua=" + encodeURIComponent(navigator.userAgent);
+
+  fetch(fullUrl, { mode: "no-cors" })
+    .then(() => {
+      document.getElementById("status").innerText =
+        "✅ Request karaoke terkirim!";
+    })
+    .catch(() => {
+      document.getElementById("status").innerText =
+        "❌ Gagal kirim.";
+    });
+    fetch(GAS_URL, {
+  method: "POST",
+  mode: "no-cors",
+  body: JSON.stringify({
+    secret: "karaoke-cempaka-2026",
+    url: ytUrl
+  })
+});
+});
+</script>
