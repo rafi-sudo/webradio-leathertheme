@@ -215,6 +215,121 @@
         <div class="swiper-button-prev"></div>
     </div>
 </section>
+<!--OnlineRadioBox Top widget - Skin Top Chart Orange-->
+<div class="orbC cmpct" id="orb_top_1bd0328f5a8cd2c6">
+    <style media="screen">
+    /* === Top Chart Music Look === */
+    .orbC {
+        border: none !important;
+        border-radius: 12px;
+        background: linear-gradient(160deg, #FFAD60, #FF6B35) !important; /* kulit orange gradient */
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .orbCt {
+        background-color: transparent !important;
+        padding-left: 15px !important;
+        line-height: 50px !important;
+    }
+
+    .orbCtn {
+        color: #fff !important;
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        display: block !important;
+    }
+
+    .orbIC {
+        height: 250px !important;
+        background-color: #fff !important;
+        border-radius: 0 0 12px 12px !important;
+        overflow-y: auto !important;
+        padding: 8px 0 !important;
+    }
+
+    .orbICi {
+        padding: 8px 12px !important;
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        border-bottom: 1px solid #ffad60 !important;
+        transition: transform 0.2s, background 0.2s;
+    }
+
+    .orbICi:hover {
+        transform: scale(1.02);
+        background-color: rgba(255, 173, 96, 0.1);
+    }
+
+    .orbICin {
+        height: 40px !important;
+        width: 40px !important;
+        border-radius: 50% !important;
+        line-height: 40px !important;
+        font-size: 20px !important;
+        margin-right: 12px !important;
+        color: #FF6B35 !important;
+        background: #FFE5D1 !important;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .orbICi>a, .orbICi>span {
+        color: #333 !important;
+        font-weight: 500;
+        font-size: 14px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .orbICi>a:hover {
+        color: #FF6B35 !important;
+    }
+
+    .orbICi+li {
+        border-color: #FFD1A3 !important;
+    }
+
+    /* Scrollbar modern */
+    .orbIC::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .orbIC::-webkit-scrollbar-thumb {
+        background: #FF6B35;
+        border-radius: 4px;
+    }
+
+    .orbIC::-webkit-scrollbar-track {
+        background: #FFD1A3;
+        border-radius: 4px;
+    }
+    </style>
+
+    <a class="orbCh" href="https://onlineradiobox.com/id/" title="Listen on Online Radio Box!" target="_blank">
+        <img src="//ecdn.onlineradiobox.com/img/wl.svg" alt="Listen on Online Radio Box!">
+    </a>
+
+    <a class="orbCt" href="https://onlineradiobox.com/id/rcabanjar/" target="_blank">
+        <img class="orbCti" src="//cdn.onlineradiobox.com/img/l/4/135684.v7.png" alt="Radio RCA Banjar">
+        <span class="orbCtn" style="display: none;"> Top Playlist di Radio RCA Banjar</span>
+    </a>
+
+    <script>
+      var orbtop_w = orbtop_w || { lang: "en-us" };
+      orbtop_w.cmd = orbtop_w.cmd || [];
+      orbtop_w.cmd.push(function() {
+        orbtop_w.init("orb_top_1bd0328f5a8cd2c6");
+      });
+      var s, t; s = document.createElement('script'); s.type = 'text/javascript';
+      s.src = "//ecdn.onlineradiobox.com/js/topwidget.min.e8fea607.js";
+      t = document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+    </script>
+
+    <ul class='orbIC' top='undefined'></ul>
+</div>
+<!--End OnlineRadioBox Top widget-->
 
             <!-- ===== AUDIO PLAYER ===== -->
 <div class="radio-wrap">
@@ -428,6 +543,7 @@ audio.addEventListener("waiting", () => {
         Pedoman Media Siber
     </a>
 </div>
+
 
 
 
