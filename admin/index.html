@@ -1,23 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
   <meta charset="utf-8" />
   <title>Content Manager Service Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .container {
+      padding: 40px 20px;
+    }
+    .status-box {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+    footer a {
+      color: #444;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 420px;
+      border-radius: 6px;
+    }
+  </style>
 </head>
+
 <body>
-  <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
-</body>
-  <footer style="text-align:center; padding:15px; font-size:14px; color:#666;">
-  Powered by 
-  <a href="https://www.fastly.com" target="_blank" rel="noopener noreferrer">
-    Fastly CDN
-  </a> · Managed with 
-  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-    GitHub
-  </a>
-  <br>
-  <a href="https://github.dev/rafi-sudo/webradio-leathertheme/blob/main/index.html" style="font-weight:600;">
-    Programmer Login
-  </a>
+
+  <div class="container">
+
+    <h2>Deploy Status</h2>
+
+    <!-- GitHub Actions Badge -->
+    <div class="status-box">
+      <a href="https://github.com/rafi-sudo/webradio-leathertheme/actions/workflows/jekyll.yml" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://github.com/rafi-sudo/webradio-leathertheme/actions/workflows/jekyll.yml/badge.svg?event=workflow_run"
+          alt="Deploy Jekyll site to Pages"
+        >
+      </a>
+      <p>GitHub Pages Deployment</p>
+    </div>
+
+    <!-- Decap CMS -->
+    <div class="status-box">
+      <h3>Content Manager</h3>
+      <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
+    </div>
+
+    <!-- GitHub Status -->
+    <div class="status-box">
+      <h3>GitHub Hosted Status</h3>
+      <p>
+        <a href="https://www.githubstatus.com/history" target="_blank" rel="noopener noreferrer">
+          View GitHub Incident History
+        </a>
+      </p>
+    </div>
+
+    <!-- UptimeRobot Embed -->
+    <div class="status-box">
+      <h3>Uptime Monitoring</h3>
+      <iframe
+        src="https://stats.uptimerobot.com/ObTmWDfgie/802225248"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <footer>
+    Powered by
+    <a href="https://www.fastly.com" target="_blank" rel="noopener noreferrer">
+      Fastly CDN
+    </a>
+    · Managed with
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+      GitHub
+    </a>
+    <br>
+    <a href="https://github.dev/rafi-sudo/webradio-leathertheme/blob/main/index.html" style="font-weight:600;">
+      Programmer Login
+    </a>
   </footer>
-  </html>
+
+</body>
+</html>
