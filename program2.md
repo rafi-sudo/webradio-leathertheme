@@ -3,6 +3,7 @@ layout: default
 title: Danas Dangdut Lawas dan Asli
 ---
 {% raw %}
+
 <style>
 .radio-controller {
   display: flex;
@@ -89,8 +90,9 @@ title: Danas Dangdut Lawas dan Asli
   <button id="playBtn-danas" disabled>PLAY</button>
 
   <audio id="audio-danas"
-    src="https://stream01.ganisrafi.my.id/rcabackup"
+    src="https://stream.ganisrafi.my.id/rcabackup"
     preload="none"></audio>
+
 </div>
 
 <script>
@@ -141,4 +143,5 @@ title: Danas Dangdut Lawas dan Asli
   setInterval(checkSchedule, 30000);
 })();
 </script>
+
 {% endraw %}
