@@ -3,6 +3,7 @@ layout: default
 title: Melody Memory
 ---
 {% raw %}
+
 <style>
 .radio-controller {
   display: flex;
@@ -90,8 +91,9 @@ title: Melody Memory
   <button id="playBtn-melody" disabled>PLAY</button>
 
   <audio id="audio-melody"
-    src="https://stream01.ganisrafi.my.id/backup"
+    src="https://stream.ganisrafi.my.id/backup"
     preload="none"></audio>
+
 </div>
 
 <script>
@@ -143,4 +145,5 @@ title: Melody Memory
   setInterval(checkSchedule, 30000);
 })();
 </script>
+
 {% endraw %}
