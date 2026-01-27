@@ -3,6 +3,7 @@ layout: default
 title: Karaoke Asoooy
 ---
 {% raw %}
+
 <style>
 .radio-controller {
   display: flex;
@@ -91,10 +92,10 @@ title: Karaoke Asoooy
   <button id="playBtn-karaoke" disabled>PLAY</button>
 
   <audio id="audio-karaoke"
-    src="https://stream01.ganisrafi.my.id/rcabackup"
+    src="https://stream.ganisrafi.my.id/rcabackup"
     preload="none"></audio>
-</div>
 
+</div>
 
 <script>
 (function () {
@@ -159,9 +160,12 @@ title: Karaoke Asoooy
   setInterval(checkSchedule, 30000);
 })();
 </script>
+
 {% endraw %}
 {% raw %}
+
 <!-- _includes/karaoke-widget.html -->
+
 <div class="karaoke-widget" style="
   max-width:400px;
   margin:1rem auto;
